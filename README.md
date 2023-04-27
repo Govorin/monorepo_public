@@ -8,7 +8,9 @@ Within this repo, you will find several projects and libraries that I hope will 
 
 ## Projects
 
-😢 Unfortunately, there's nothing here yet, but I'll be sure to post something soon.
+### R-todo
+
+Todo application with react, hooks, form-hooks, RTK Query & MUI to study
 
 ## Libraries
 
