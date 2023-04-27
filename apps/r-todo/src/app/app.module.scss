@@ -1,0 +1,16 @@
+/* Your styles goes here. */
+.container{
+  height: 100%;
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  .wrapper{
+    max-width: 720px;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap:20px
+  }
+}

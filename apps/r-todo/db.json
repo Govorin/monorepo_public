@@ -1,0 +1,23 @@
+{
+  "tasks": [
+    {
+      "id": "e4529adf-8535-4006-b62e-506d82027d60",
+      "title": "Learn React",
+      "completed": false
+    },
+    {
+      "id": "8172e92d-032d-4e87-a663-f1ea0d1c9f6e",
+      "title": "Learn RTK Query",
+      "completed": false
+    },
+    {
+      "title": "Learn jsx",
+      "id": "5b1f4c34-10ad-4c7a-9241-1957bb94fbc8"
+    },
+    {
+      "title": "Learn jsx",
+      "id": "417184b3-f19b-4ce6-9499-3f07410ed4fd",
+      "completed": true
+    }
+  ]
+}

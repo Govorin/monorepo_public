@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "allowJs": false,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "types": ["vite/client", "vitest"],
+    "paths": {
+      "@components": ["apps/r-todo/src/app/components/index.ts"],
+      "@api": ["apps/r-todo/src/app/api/index.ts"],
+      "@store": ["apps/r-todo/src/app/store/index.ts"],
+      "@types": ["apps/r-todo/src/app/types/index.ts"],
+    }
+  },
+  "files": [],
+  "include": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    }
+  ],
+  "extends": "../../tsconfig.base.json"
+}
