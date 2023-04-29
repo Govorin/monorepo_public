@@ -12,6 +12,10 @@ Within this repo, you will find several projects and libraries that I hope will 
 
 Todo application with react, hooks, form-hooks, RTK Query & MUI to study
 
+### F-apparel
+
+Flutter app online clothing store
+
 ## Libraries
 
 ### Leetcode
