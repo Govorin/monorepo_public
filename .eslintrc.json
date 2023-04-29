@@ -7,24 +7,17 @@
   },
   "overrides": [
     {
-      "files": [
-        "*.ts",
-        "*.tsx",
-        "*.js",
-        "*.jsx"
-      ],
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
         "ecmaVersion": 2020,
-        "project": [
-          "tsconfig.base.json"
-        ],
+        "project": ["tsconfig.base.json"],
         "sourceType": "module"
       },
       "extends": [
         "prettier",
         "eslint:recommended",
-        "plugin:@nrwl/nx/typescript",
+        "plugin:@nx/typescript",
         "plugin:sonarjs/recommended",
         "plugin:promise/recommended",
         "plugin:import/errors",
@@ -37,7 +30,7 @@
       ],
       "plugins": [
         "@typescript-eslint",
-        "@nrwl/nx",
+        "@nx",
         "sonarjs",
         "sort-class-members",
         "promise",
@@ -46,11 +39,8 @@
       ],
       "rules": {
         "react/react-in-jsx-scope": "off",
-        "@nrwl/nx/enforce-module-boundaries": "off",
-        "arrow-body-style": [
-          "error",
-          "as-needed"
-        ],
+        "@nx/enforce-module-boundaries": "off",
+        "arrow-body-style": ["error", "as-needed"],
         "prettier/prettier": [
           "error",
           {
@@ -89,19 +79,11 @@
             "accessorPairPositioning": "getThenSet"
           }
         ],
-        "comma-dangle": [
-          "error",
-          "always-multiline"
-        ],
-        "quotes": [
-          "error",
-          "single"
-        ],
+        "comma-dangle": ["error", "always-multiline"],
+        "quotes": ["error", "single"],
         "semi-spacing": "error",
         "semi": "off",
-        "@typescript-eslint/semi": [
-          "error"
-        ],
+        "@typescript-eslint/semi": ["error"],
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/no-parameter-properties": "off",
         "@typescript-eslint/class-name-casing": "off",
@@ -136,10 +118,7 @@
         "camelcase": "off",
         "constructor-super": "error",
         "dot-notation": "off",
-        "eqeqeq": [
-          "error",
-          "smart"
-        ],
+        "eqeqeq": ["error", "smart"],
         "guard-for-in": "off",
         "id-blacklist": "off",
         "id-match": "off",
@@ -207,25 +186,16 @@
         "prefer-const": "error",
         "computed-property-spacing": "off",
         "radix": "error",
-        "curly": [
-          "error",
-          "multi"
-        ],
+        "curly": ["error", "multi"],
         "no-multiple-empty-lines": [
           "error",
           {
             "max": 1
           }
         ],
-        "object-curly-spacing": [
-          "off",
-          "never"
-        ],
+        "object-curly-spacing": ["off", "never"],
         "array-bracket-spacing": "off",
-        "space-in-parens": [
-          "off",
-          "never"
-        ],
+        "space-in-parens": ["off", "never"],
         "@typescript-eslint/no-unsafe-assignment": "off",
         "@typescript-eslint/no-unsafe-member-access": "off",
         "@typescript-eslint/no-unsafe-call": "off",
@@ -236,18 +206,14 @@
             "ignoreVoid": true
           }
         ],
-        "nonblock-statement-body-position": [
-          "off"
-        ],
+        "nonblock-statement-body-position": ["off"],
         "@typescript-eslint/consistent-type-definitions": "error",
         "@typescript-eslint/no-var-requires": "off",
         "import/no-deprecated": "error",
         "import/prefer-default-export": "off",
         "@typescript-eslint/require-await": "off",
         "@typescript-eslint/no-for-in-array": "error",
-        "import/no-unresolved": [
-          "off"
-        ],
+        "import/no-unresolved": ["off"],
         "class-methods-use-this": "off",
         "@typescript-eslint/unbound-method": "off",
         "@typescript-eslint/indent": "off",
@@ -274,26 +240,14 @@
       "settings": {
         "import/resolver": {
           "node": {
-            "extensions": [
-              ".js",
-              ".jsx",
-              ".ts",
-              ".tsx"
-            ]
+            "extensions": [".js", ".jsx", ".ts", ".tsx"]
           }
         }
       }
     },
     {
-      "files": [
-        "*.tsx",
-        "*.jsx"
-      ],
-      "plugins": [
-        "jsx-a11y",
-        "react",
-        "react-hooks"
-      ],
+      "files": ["*.tsx", "*.jsx"],
+      "plugins": ["jsx-a11y", "react", "react-hooks"],
       "extends": [
         "plugin:jsx-a11y/recommended",
         "next/core-web-vitals",
@@ -302,12 +256,8 @@
       ]
     },
     {
-      "files": [
-        "*.json"
-      ],
-      "extends": [
-        "plugin:prettier/recommended"
-      ],
+      "files": ["*.json"],
+      "extends": ["plugin:prettier/recommended"],
       "rules": {
         "prettier/prettier": [
           "error",
@@ -319,19 +269,15 @@
           }
         ]
       },
-      "plugins": [
-        "prettier"
-      ]
+      "plugins": ["prettier"]
     },
     {
-      "files": [
-        "*.component.html"
-      ],
+      "files": ["*.component.html"],
       "parser": "@angular-eslint/template-parser",
       "extends": [
         "plugin:prettier/recommended",
         "plugin:@angular-eslint/template/recommended",
-        "plugin:@nrwl/nx/angular-template"
+        "plugin:@nx/angular-template"
       ],
       "rules": {
         "prettier/prettier": [
@@ -344,9 +290,7 @@
           }
         ]
       },
-      "plugins": [
-        "prettier"
-      ]
+      "plugins": ["prettier"]
     },
     {
       "files": ["*.entity.ts"],
@@ -362,7 +306,5 @@
   },
   "plugins": [],
   "root": true,
-  "ignorePatterns": [
-    "**/*.html"
-  ]
+  "ignorePatterns": ["**/*.html"]
 }
