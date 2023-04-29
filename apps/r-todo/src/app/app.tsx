@@ -1,3 +1,7 @@
+import { Card, CircularProgress } from '@mui/material';
+
+import styles from './app.module.scss';
+
 import {
   useCreateTaskMutation,
   useDeleteTaskMutation,
@@ -5,10 +9,7 @@ import {
   useUpdateTaskMutation,
 } from '@api';
 import { TaskForm, TaskItem, TaskList } from '@components';
-import { Card, CircularProgress } from '@mui/material';
 import { Task } from '@types';
-
-import styles from './app.module.scss';
 
 export const App = () => {
   const [deleteTask] = useDeleteTaskMutation();
@@ -26,6 +27,7 @@ export const App = () => {
   };
   const handleCreate = async (task: Partial<Task>) => {
     await createTask(task);
+    await refetch();
   };
 
   return (
