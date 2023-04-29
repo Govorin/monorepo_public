@@ -1,9 +1,10 @@
-import { store } from '@store';
 import { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 
 import { App } from './app/app';
+
+import { store } from '@store';
 const element = document.getElementById('root');
 if (!element) throw new Error('Could not find root element');
 else {
