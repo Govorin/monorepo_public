@@ -14,6 +14,7 @@ class AuthScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            const Spacer(), // use Spacer
             const Text(
               'Login to apparel',
               style: TextStyle(
@@ -21,7 +22,7 @@ class AuthScreen extends StatelessWidget {
                   fontSize: 30,
                   fontWeight: FontWeight.w500),
             ),
-            const SizedBox(height: 46.0),
+            const Spacer(), // use Spacer
             const AuthForm(),
             const SizedBox(height: 26.0),
             const DividerWithText('Or'),
@@ -40,7 +41,6 @@ class AuthScreen extends StatelessWidget {
                     size: 35.0,
                   ),
                 ),
-                const SizedBox(width: 16.0),
                 RawMaterialButton(
                   elevation: 2.0,
                   fillColor: Colors.white,
@@ -54,16 +54,30 @@ class AuthScreen extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: 16.0),
+            const Spacer(), // use Spacer
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                const Text("Don't have an account?"),
+                const Text(
+                  "Don't have an account?",
+                  style: TextStyle(
+                      color: sonicSilverColor,
+                      fontFamily: 'Poppins',
+                      fontSize: 14,
+                      fontWeight: FontWeight.w500),
+                ),
                 TextButton(
                   onPressed: () {
                     Navigator.pushNamed(context, '/register');
                   },
-                  child: const Text('Sign Up'),
+                  child: const Text(
+                    'Sign Up',
+                    style: TextStyle(
+                        color: primaryColor,
+                        fontFamily: 'Poppins',
+                        fontSize: 14,
+                        fontWeight: FontWeight.w500),
+                  ),
                 ),
               ],
             ),
@@ -84,17 +98,17 @@ class DividerWithText extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        const Expanded(child: Divider(color: silverSandColor)),
+        const Expanded(child: Divider(color: sonicSilverColor)),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 8.0),
           child: Text(text,
               style: const TextStyle(
-                  color: silverSandColor,
+                  color: sonicSilverColor,
                   fontFamily: 'Poppins',
                   fontWeight: FontWeight.w500,
                   fontSize: 14)),
         ),
-        const Expanded(child: Divider(color: Colors.grey)),
+        const Expanded(child: Divider(color: sonicSilverColor)),
       ],
     );
   }

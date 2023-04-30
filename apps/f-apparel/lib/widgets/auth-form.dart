@@ -1,4 +1,4 @@
-import 'package:flutter/foundation.dart';
+import 'package:f_apparel/screens/home.screen.dart';
 import 'package:flutter/material.dart';
 
 import '../helpers/colors.dart';
@@ -19,10 +19,6 @@ class AuthFormState extends State<AuthForm> {
   void _submitForm() {
     if (_formKey.currentState!.validate()) {
       _formKey.currentState!.save();
-      if (kDebugMode) {
-        print('Username: $_username');
-        print('Password: $_password');
-      }
     }
   }
 
@@ -45,7 +41,7 @@ class AuthFormState extends State<AuthForm> {
               _username = value;
             },
           ),
-          const SizedBox(height: 24.0),
+          const SizedBox(height: 10.0),
           CustomTextField(
             hintText: 'Password',
             prefixIcon: Icons.lock,
@@ -80,7 +76,12 @@ class AuthFormState extends State<AuthForm> {
             child: ElevatedButton(
               onPressed: () {
                 _submitForm();
-                // TODO: Добавь функциональность кнопки "Login"
+                Navigator.pushAndRemoveUntil(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => HomeScreen(),
+                    ),
+                    (Route<dynamic> route) => false);
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: primaryColor,

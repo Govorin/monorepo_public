@@ -1,4 +1,5 @@
 import 'package:f_apparel/screens/auth.screen.dart';
+import 'package:f_apparel/screens/home.screen.dart';
 import 'package:f_apparel/screens/recovery.screen.dart';
 import 'package:f_apparel/screens/register.screen.dart';
 import 'package:flutter/material.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => const AuthScreen(),
         '/recovery': (context) => const RecoveryScreen(),
         '/register': (context) => const RegisterScreen(),
-        // '/home': (context) => HomeScreen(),
+        '/home': (context) => HomeScreen(),
         // '/favorites': (context) => FavoritesScreen(),
         // '/cart': (context) => CartScreen(),
         // '/categories': (context) => CategoriesScreen(),

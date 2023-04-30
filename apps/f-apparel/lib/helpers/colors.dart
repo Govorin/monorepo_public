@@ -9,3 +9,4 @@ const silverSandColor = Color(0xFFC4C4C4);
 const sonicSilverColor = Color(0xFF74747d);
 const ghostColor = Color(0xFFF9FAFB);
 const gainsboroColor = Color(0xFFDADADA);
+const errorColor = Color(0xFFd9493c);
