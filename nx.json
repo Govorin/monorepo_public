@@ -88,6 +88,9 @@
       "application": {
         "style": "scss",
         "linter": "eslint"
+      },
+      "component": {
+        "style": "scss"
       }
     }
   },

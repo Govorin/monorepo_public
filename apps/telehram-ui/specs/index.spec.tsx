@@ -1,10 +1,11 @@
 import { render } from '@testing-library/react';
+import React from 'react';
 
-import TaskItem from './TaskItem';
+import { Index } from '../pages';
 
-describe('TaskItem', () => {
+describe('Index', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<TaskItem />);
+    const { baseElement } = render(<Index />);
     expect(baseElement).toBeTruthy();
   });
 });

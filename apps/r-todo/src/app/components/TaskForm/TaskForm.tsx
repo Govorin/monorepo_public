@@ -1,10 +1,9 @@
-import { useCreateTaskMutation, useUpdateTaskMutation } from '@api';
 import { Button, CircularProgress, TextField } from '@mui/material';
-import { Task } from '@types';
-import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 
 import styles from './TaskForm.module.scss';
+
+import { Task } from '@types';
 
 interface TaskFormProps {
   onSubmit: (data: Partial<Task>) => Promise<void>;
